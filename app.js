@@ -11,7 +11,7 @@ if(! process.env.MICROSOFT_APP_ID || ! process.env.MICROSOFT_APP_PASSWORD) {
 }
 
 var server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
+server.listen(process.env.port || process.env.PORT || 3978, 'localhost', function () {
    console.log('%s listening to %s', server.name, server.url);
 });
 
